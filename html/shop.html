@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Cart</title>
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/img/cart.png">
+</head>
+<body>
+    <!--dark-mode / light-mode toggle-->
+    <div class="toggle-container">
+        <input type="checkbox" id="toggle" name="toggle"><label for="toggle"></label>
+    </div>
+    <!--Header starts-->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <img style="height: 70px; width: 70px;" src="/img/logo.png" alt="Logo" id="logo">
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="sub-menu">
+                            <img src="/img/cart.png" id="img-cart">
+                            <div id="cart">
+                                <table id="list-cart" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Image</th>
+                                            <th>Name</th>
+                                            <th>Price</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="empty-cart" class="button u-full-width">Empty Cart</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Card starts-->
+    <div id="online-course">
+        <div id="list-courses">
+            <h1 id="header-courses">Online Courses</h1>
+            <div class="courses-container">
+
+                <div class="course-item">
+                    <div class="course-card">
+                        <img src="/img/course (1).jpg" class="course-img">
+                        <div class="info-card">                                
+                            <h4>HTML, CSS & JS for beginners</h4>
+                            <img src="/img/stars.png">
+                            <p><span class="price">₹199</span><span class="discount">₹99</span></p>
+                            <a href="#" class="add-cart" data-id="1"><i class="fa fa-cart-plus"></i>&nbsp;<!--non breaking space--> Add to Cart</a>
+                            <a style="position: relative; left: 150px; top: 40px;" href="/html/card-details.html" class="add-cart" data-id="1"><i class="fa fa-cart-plus"></i>&nbsp;<!--non breaking space--> Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-card">
+                        <img src="/img/course (2).jpg" class="course-img">
+                        <div class="info-card">
+                            <h4>Cooking Tutorials</h4>
+                            <img src="/img/stars.png">
+                            <p><span class="price">₹199</span><span class="discount">₹99</span></p>
+                            <a href="#" class="add-cart" data-id="2"><i class="fa fa-cart-plus"></i>&nbsp;<!--non breaking space--> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-card">
+                        <img src="/img/course (3).jpg" class="course-img">
+                        <div class="info-card">
+                            <h4>Guitar for beginners</h4>
+                            <img src="/img/stars.png">
+                            <p><span class="price">₹199</span><span class="discount">₹99</span></p>
+                            <a href="#" class="add-cart" data-id="3"><i class="fa fa-cart-plus"></i>&nbsp;<!--non breaking space--> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-card">
+                        <img src="/img/course (4).jpg" class="course-img">
+                        <div class="info-card">
+                            <h4>Plantation</h4>
+                            <img src="/img/stars.png">
+                            <p><span class="price">₹199</span><span class="discount">₹99</span></p>
+                            <a href="#" class="add-cart" data-id="4"><i class="fa fa-cart-plus"></i>&nbsp;<!--non breaking space--> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-card">
+                        <img src="/img/course (5).jpg" class="course-img">
+                        <div class="info-card">
+                            <h4>Decoration with items available at home</h4>
+                            <img src="/img/stars.png">
+                            <p><span class="price">₹199</span><span class="discount">₹99</span></p>
+                            <a href="#" class="add-cart" data-id="5"><i class="fa fa-cart-plus"></i>&nbsp;<!--non breaking space--> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-card">
+                        <img src="/img/course (1).jpg" class="course-img">
+                        <div class="info-card">
+                            <h4>HTML, CSS & JS for beginners</h4>
+                            <img src="/img/stars.png">
+                            <p><span class="price">₹199</span><span class="discount">₹99</span></p>
+                            <a href="#" class="add-cart" data-id="6"><i class="fa fa-cart-plus"></i>&nbsp;<!--non breaking space--> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-card">
+                        <img src="/img/course (2).jpg" class="course-img">
+                        <div class="info-card">
+                            <h4>HTML, CSS & JS for beginners</h4>
+                            <img src="/img/stars.png">
+                            <p><span class="price">₹199</span><span class="discount">₹99</span></p>
+                            <a href="#" class="add-cart" data-id="7"><i class="fa fa-cart-plus"></i>&nbsp;<!--non breaking space--> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-card">
+                        <img src="/img/course (3).jpg" class="course-img">
+                        <div class="info-card">
+                            <h4>HTML, CSS & JS for beginners</h4>
+                            <img src="/img/stars.png">
+                            <p><span class="price">₹199</span><span class="discount">₹99</span></p>
+                            <a href="#" class="add-cart" data-id="8"><i class="fa fa-cart-plus"></i>&nbsp;<!--non breaking space--> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-card">
+                        <img src="/img/course (4).jpg" class="course-img">
+                        <div class="info-card">
+                            <h4>HTML, CSS & JS for beginners</h4>
+                            <img src="/img/stars.png">
+                            <p><span class="price">₹199</span><span class="discount">₹99</span></p>
+                            <a href="#" class="add-cart" data-id="9"><i class="fa fa-cart-plus"></i>&nbsp;<!--non breaking space--> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-card">
+                        <img src="/img/course (5).jpg" class="course-img">
+                        <div class="info-card">
+                            <h4>HTML, CSS & JS for beginners</h4>
+                            <img src="/img/stars.png">
+                            <p><span class="price">₹199</span><span class="discount">₹99</span></p>
+                            <a href="#" class="add-cart" data-id="10"><i class="fa fa-cart-plus"></i>&nbsp;<!--non breaking space--> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-card">
+                        <img src="/img/course (1).jpg" class="course-img">
+                        <div class="info-card">
+                            <h4>HTML, CSS & JS for beginners</h4>
+                            <img src="/img/stars.png">
+                            <p><span class="price">₹199</span><span class="discount">₹99</span></p>
+                            <a href="#" class="add-cart" data-id="11"><i class="fa fa-cart-plus"></i>&nbsp;<!--non breaking space--> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-card">
+                        <img src="/img/course (2).jpg" class="course-img">
+                        <div class="info-card">
+                            <h4>HTML, CSS & JS for beginners</h4>
+                            <img src="/img/stars.png">
+                            <p><span class="price">₹199</span><span class="discount">₹99</span></p>
+                            <a href="#" class="add-cart" data-id="12"><i class="fa fa-cart-plus"></i>&nbsp;<!--non breaking space--> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
